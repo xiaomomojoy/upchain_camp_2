@@ -3,7 +3,7 @@ import { ethers } from "hardhat";
 async function main() {
   const [deployer] = await ethers.getSigners();
 
-  const Count = await ethers.getContractFactory("Count");
+  const Count = await ethers.getContractFactory("Counter");
   const count = await Count.deploy();
 
   await count.deployed();
