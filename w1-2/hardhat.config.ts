@@ -13,6 +13,9 @@ const config: HardhatUserConfig = {
       accounts: [process.env.private_key]
     }
   },
+  etherscan: {
+    apiKey:  'RJM2T4H171EFAC9CWQCSWQ63KG1VRT2XV5'
+  }
 };
 
 export default config;
